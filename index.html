@@ -172,7 +172,6 @@
     </nav>
 
     <div class="container">
-      <form>
         <div class="mb-3">
           <label for="nama" class="form-label">Nama Korban</label>
           <div id="emailHelp" class="form-text text-danger">
@@ -205,14 +204,11 @@
         </div>
         <div id="liveAlertPlaceholder"></div>
         <button
-          type="submit"
           class="btn btn-primary float-end"
           id="liveAlertBtn"
-          onclick=" return false "
         >
           Eksekusi😈
         </button>
-      </form>
     </div>
 
     <script
@@ -226,6 +222,7 @@
       crossorigin="anonymous"
     ></script>
     <script>
+      
       const alertPlaceholder = document.getElementById("liveAlertPlaceholder");
       const appendAlert = (message, type) => {
         const wrapper = document.createElement("div");
